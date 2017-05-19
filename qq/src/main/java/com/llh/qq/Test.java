@@ -12,7 +12,7 @@ public class Test {
 /////S3444566776666666666666
 
 /////S344465678999666666666666
->>>>>>> branch 'master' of https://github.com/llhcc/qq.git
+//>>>>>>> branch 'master' of https://github.com/llhcc/qq.git
 		//----==
 	///	6666
 		
