@@ -10,7 +10,7 @@ public class ConsistentHashingWithVirtualNode {
      * 待添加入Hash环的服务器列表
      */
    private static String[] servers = {"192.168.0.0:111", "192.168.0.1:111", "192.168.0.2:111",
-           "192.168.0.3:111", "192.168.0.4:111"};
+           "192.168.0.3:111", "192.168.0.4:111", "192.168.0.5:111", "192.168.0.6:111"};
 
    /**
     * 真实结点列表,考虑到服务器上线、下线的场景，即添加、删除的场景会比较频繁，这里使用LinkedList会更好
@@ -88,7 +88,7 @@ public class ConsistentHashingWithVirtualNode {
 
    public static void main(String[] args)
    {
-       String[] nodes = {"127.0.0.1:1111", "221.226.0.1:2222", "10.211.0.1:3333"};
+       String[] nodes = {"127.0.0.1:1111", "221.226.0.1:2222", "10.211.0.1:3333","10.211.0.2:3222"};
        for (int i = 0; i < nodes.length ; i++)
            System.out.println("[" + nodes[i] + "]的hash值为" + 
                    getHash(nodes[i]) + ", 被路由到结点[" + getServer(nodes[i]) + "]");
